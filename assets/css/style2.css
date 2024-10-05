@@ -16,7 +16,7 @@
 /*----------------------------------------*/
 /*----- 1 General styles -----*/
 /*----------------------------------------*/
-body { -webkit-font-smoothing: antialiased; -webkit-animation: fix 1s 1; overflow-x: hidden; }
+body { -webkit-font-smoothing: antialiased; animation: fix 1s 1; overflow-x: hidden; }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 { margin-bottom: .7rem; }
 a, a:hover { text-decoration: none; }
 img { max-width: 100%; }
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #dtr-header-global .
 .dtr-m-5 { margin: 3rem }
 .dtr-mt-5, .dtr-my-5 { margin-top: 3rem }
 .dtr-mr-5, .dtr-mx-5 { margin-right: 3rem }
-.dtr-mb-5, .dtr-my-5 { margin-bottom: 3rem }
+.dtr-mb-5, .dtr-my-5 { margin-bottom: 3rem; font-weight: bolder; }
 .dtr-ml-5, .dtr-mx-5 { margin-left: 3rem }
 .dtr-m-6 { margin: 4rem }
 .dtr-mt-6, .dtr-my-6 { margin-top: 4rem }
@@ -157,16 +157,17 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #dtr-header-global .
 /*----------------------------------------*/
 /*===== 3 Buttons =====*/
 /*----------------------------------------*/
-button, input[type="submit"], input[type="reset"], .dtr-form-btn { width: auto; height: auto; position: relative; display: inline-block; padding: 15px 30px 13px 30px; margin: 10px 0; cursor: pointer; border-width: 0; border-style: solid; border-radius: 0; text-decoration: none; outline: none; -webkit-backface-visibility: hidden; vertical-align: middle; text-align: center; font-weight: normal; font-size: 1em; line-height: 25px; -webkit-box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); }
+button, input[type="submit"], input[type="reset"], .dtr-form-btn { width: auto; height: auto; position: relative; display: inline-block; padding: 15px 30px 13px 30px; margin: 10px 0; cursor: pointer; border-width: 0; border-style: solid; border-radius: 0; text-decoration: none; outline: none; backface-visibility: hidden; vertical-align: middle; text-align: center; font-weight: normal; font-size: 1em; line-height: 25px; -webkit-box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); }
 .dtr-submit-center { display: block; margin: 0; text-align: center; }
 .dtr-submit-full .dtr-form-btn, .dtr-submit-full input[type="submit"], .dtr-submit-full button { width: 100%; display: block; margin: 0; text-align: center; }
 .dtr-btn-round { border-radius: 150px; font-size: 17px; }
 /*== Styled button ==*/
-.dtr-btn { width: auto; height: auto; position: relative; display: inline-block; padding: 15px 70px 15px 20px; margin: 0; border-width: 1px; border-style: solid; border-radius: 150px; cursor: pointer; outline: none; -webkit-backface-visibility: hidden; vertical-align: middle; -webkit-transition: all .5s ease; transition: all .5s ease; white-space: normal; -webkit-box-shadow: 0px 3px 5px 0px rgba(255,165,0,0.03); box-shadow: 0px 3px 5px 0px rgba(255,165,0,0.03); text-decoration: none; text-align: left; font-size: 1em; line-height: 22px; font-weight: 700; }
+.dtr-btn { width: auto; height: auto; position: relative; display: inline-block; padding: 15px 70px 15px 20px; margin: 0; border-width: 1px; border-style: solid; border-radius: 150px; cursor: pointer; outline: none; backface-visibility: hidden; vertical-align: middle; -webkit-transition: all .5s ease; transition: all .5s ease; white-space: normal; -webkit-box-shadow: 0px 3px 5px 0px rgba(255,165,0,0.03); box-shadow: 0px 3px 5px 0px rgba(255,165,0,0.03); text-decoration: none; text-align: left; font-size: 1em; line-height: 22px; font-weight: 700; }
 .dtr-btn a { display: block; text-decoration: none; color: inherit; }
 .dtr-btn span { width: 40px; height: 40px; display: inline-block; position: absolute; right: 5px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); border-radius: 50%; font-size: inherit; text-align: center; }
 .dtr-btn span i { display: inline-block; font-size: 16px; line-height: 40px; }
 .dtr-btn:hover span i { -webkit-animation: toRightFromLeft 0.3s forwards; -moz-animation: toRightFromLeft 0.3s forwards; animation: toRightFromLeft 0.3s forwards; }
+
 /*----------------------------------------*/
 /*===== 4 Lists =====*/
 /*----------------------------------------*/
@@ -206,7 +207,7 @@ ol li, ul li { margin-bottom: 10px; }
 .dtr-icon-with-bg { position: relative; display: inline-block; margin-top: 20px; margin-right: 5px; font-size: 56px; z-index: 9; }
 .dtr-icon-with-bg:after { content: ''; width: 74px; height: 74px; position: absolute; top: -20px; left: 50%; margin-left: -37px; border-radius: 50%; z-index: -1; }
 /*== feature box ==*/
-.dtr-feature-box { position: relative; padding: 50px 30px 50px 80px; margin-bottom: 30px; border-radius: 10px; -webkit-box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); }
+.dtr-feature-box { position: relative; padding: 30px 30px 30px 80px; margin-bottom: 30px; border-radius: 10px; -webkit-box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); background-color: #ffffff;}
 .dtr-feature-box-icon { width: 50px; height: 50px; display: block; position: absolute; top: 50px; left: 0; border-radius: 0 10px 10px 0; font-size: 24px; line-height: 50px; text-align: center; }
 /*== about ==*/
 .dtr-about img:first-child { margin: 0 20px 0 0; }
@@ -226,10 +227,10 @@ ol li, ul li { margin-bottom: 10px; }
 .dtr-meta-date:before { font-family: 'icomoon'; content: "\ecdb"; margin-right: 10px; vertical-align: middle; }
 .dtr-post-carousel-content { border-radius: 10px; }
 /*== reviews ==*/
-.dtr-testimonial-wrapper { padding: 30px 20px; margin-bottom: 5px; margin: 5px; border-radius: 10px; -webkit-box-shadow: 0px 3px 8px 0px rgba(255,165,0,0.1); box-shadow: 0px 3px 8px 0px rgba(255,165,0,0.1); }
+.dtr-testimonial-wrapper { padding: 1px 1px; margin-bottom: 5px; margin: 5px; border-radius: 5px; -webkit-box-shadow: 0px 3px 8px 0px rgba(255,165,0,0.1); box-shadow: 0px 3px 8px 0px rgba(255,165,0,0.1);  width: 100%; object-fit: cover;}
 .dtr-5-stars { display: block; align-self: flex-start; }
 .dtr-5-stars:after { font-family: 'icomoon'; content: '\ec0e\ec0e\ec0e\ec0e\ec0e'; letter-spacing: 2px; font-size: 12px; }
-.dtr-testimonial-wrapper img { padding: 2px; -webkit-box-shadow: 0px 0px 10px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 10px 0px rgba(255,165,0,0.1); }
+.dtr-testimonial-wrapper img { padding: 1px; -webkit-box-shadow: 0px 0px 10px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 10px 0px rgba(255,165,0,0.1); width: auto; object-fit: cover; max-width: 100%;}
 /*== Accordion ==*/
 .dtr-accordion .card-header { padding: 0; margin: 0; border: 0; border-radius: 0; }
 .dtr-accordion.accordion > .card { border: 0; border-radius: 0; }
@@ -682,3 +683,17 @@ opacity:0
     right: -20px;
 }
 
+.container {
+    max-width: 1400px; /* Aumenta o limite de largura */
+}
+.brand-01__image img {
+    width: 10px; /* Defina a largura fixa que você deseja */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin: 0 auto; /* Centraliza a imagem dentro do contêiner */
+    object-fit: contain; /* Garante que a imagem seja redimensionada adequadamente dentro do contêiner sem ser cortada */
+}
+
+p {
+    font-weight: bold; /* Isso deixa o texto abaixo do título em negrito */
+  }

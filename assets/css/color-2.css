@@ -2,8 +2,8 @@
 /*----- Orange and Grey Color Scheme -----*/
 /*----------------------------------------*/
 /*== text colors ==*/
-body { color: rgba(80,80,80,0.80); }
-h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #505050; }
+body { color: #85848b; }
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #85848b; }
 .color-white, .color-white h1, .color-white h2, .color-white h3, .color-white h4, .color-white h5, .color-white h6, .color-white p, .color-white a, .color-white li, .color-white i, .color-white span { color: #fff }
 .color-white-muted, .color-white-muted h1, .color-white-muted h2, .color-white-muted h3, .color-white-muted h4, .color-white-muted h5, .color-white-muted h6, .color-white-muted.dtr-list-checkmark li:before { color: rgba(255,255,255,.7) !important; }
 .color-theme { color: #505050 !important; }
@@ -40,9 +40,9 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #505050; }
 .dropdown-item:focus, .dropdown-item:hover { color: #f97c1e; background-color: transparent; }
 .dropdown-item.active, .dropdown-item:active { color: #f97c1e; background-color: transparent }
 /*== Buttons ==*/
-.dtr-btn { background-color: #fff; border-color: #e8eaee; }
+.dtr-btn { background-color: #e6e6e6; border-color: #e8eaee; }
 .dtr-btn a { color: #505050; }
-.dtr-btn:hover { background-color: #505050; border-color: #505050; -webkit-transition: all .5s ease; transition: all .5s ease; }
+.dtr-btn:hover { background-color: #505050; border-color: #505050; -webkit-transition: all .5s ease; transition: all .5s ease; color: #fff;}
 .dtr-btn:hover a { color: #fff; }
 .dtr-btn span { background-color: rgba(249,124,30,.25); color: #333333; }
 .dtr-btn span i { color: inherit; }

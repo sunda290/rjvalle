@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #85848b; }
 .dtr-border-animation { border-color: #999999; }
 /*== feature box ==*/
 .dtr-feature-box-icon { background-color: #f97c1e; color: #fff; }
+.dtr-feature-box-icon2 { background-color: #f97c1e; color: #fff; }
 .dtr-feature-box:hover .dtr-feature-box-icon { background-color: #505050; color: #fff; }
 /*== blog post carousel ==*/
 .dtr-post-carousel-content { background-color: #fff; }

@@ -452,7 +452,7 @@ form label.error { font-size: 10px; }
 .dtr-form-row-2col-unequal .dtr-form-column { width: 70%; }
 .dtr-form-row-2col-unequal .dtr-form-column:last-child { width: 30%; }
 /*== form box ==*/
-.dtr-hero-form { -webkit-box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); }
+.dtr-hero-form { -webkit-box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); max-width: 400px; margin-left: auto; margin-right: auto; padding: 20px; }
 .dtr-form-head { padding: 20px 50px; border-radius: 10px 10px 0 0; }
 .dtr-form-head h4, .dtr-form-head h5, .dtr-form-head h6 { margin-bottom: 0; }
 .dtr-form-body { padding: 40px 50px 50px 50px; border-radius: 0 0 10px 10px; }
@@ -724,4 +724,13 @@ p {
         flex: 0 0 45%; /* Nos tablets e maiores, os boxes ocupam 45% da tela */
         max-width: 45%;
     }
+}
+
+.form-box {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 600px; /* Largura máxima */
+    margin: 0 auto; /* Centralizar a caixa */
 }

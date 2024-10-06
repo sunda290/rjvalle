@@ -61,12 +61,12 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #dtr-header-global .
 .dtr-m-4 { margin: 1.5rem }
 .dtr-mt-4, .dtr-my-4 { margin-top: 1.5rem }
 .dtr-mr-4, .dtr-mx-4 { margin-right: 1.5rem }
-.dtr-mb-4, .dtr-my-4 { margin-bottom: 1.5rem; font-weight: bolder; }
+.dtr-mb-4, .dtr-my-4 { margin-bottom: 1.5rem; font-weight: bolder; padding-left: 5rem;}
 .dtr-ml-4, .dtr-mx-4 { margin-left: 1.5rem }
 .dtr-m-5 { margin: 3rem }
 .dtr-mt-5, .dtr-my-5 { margin-top: 3rem }
 .dtr-mr-5, .dtr-mx-5 { margin-right: 3rem }
-.dtr-mb-5, .dtr-my-5 { margin-bottom: 3rem; font-weight: bolder; }
+.dtr-mb-5, .dtr-my-5 { margin-bottom: 3rem; padding-left: 5rem; font-weight: bolder; }
 .dtr-ml-5, .dtr-mx-5 { margin-left: 3rem }
 .dtr-m-6 { margin: 4rem }
 .dtr-mt-6, .dtr-my-6 { margin-top: 4rem }
@@ -160,13 +160,15 @@ h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, #dtr-header-global .
 button, input[type="submit"], input[type="reset"], .dtr-form-btn { width: auto; height: auto; position: relative; display: inline-block; padding: 15px 30px 13px 30px; margin: 10px 0; cursor: pointer; border-width: 0; border-style: solid; border-radius: 0; text-decoration: none; outline: none; backface-visibility: hidden; vertical-align: middle; text-align: center; font-weight: normal; font-size: 1em; line-height: 25px; -webkit-box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); }
 .dtr-submit-center { display: block; margin: 0; text-align: center; }
 .dtr-submit-full .dtr-form-btn, .dtr-submit-full input[type="submit"], .dtr-submit-full button { width: 100%; display: block; margin: 0; text-align: center; }
-.dtr-btn-round { border-radius: 150px; font-size: 17px; }
+.dtr-btn-round { border-radius: 150px; font-size: 17px;}
 /*== Styled button ==*/
-.dtr-btn { width: auto; height: auto; position: relative; display: inline-block; padding: 15px 70px 15px 20px; margin: 0; border-width: 1px; border-style: solid; border-radius: 150px; cursor: pointer; outline: none; backface-visibility: hidden; vertical-align: middle; -webkit-transition: all .5s ease; transition: all .5s ease; white-space: normal; -webkit-box-shadow: 0px 3px 5px 0px rgba(255,165,0,0.03); box-shadow: 0px 3px 5px 0px rgba(255,165,0,0.03); text-decoration: none; text-align: left; font-size: 1em; line-height: 22px; font-weight: 700; }
+.dtr-btn { width: auto; height: auto; position: relative; display: inline-block; padding: 15px 70px 15px 20px; margin: 20px; margin-left: 70px; border-width: 1px; border-style: solid; border-radius: 150px; cursor: pointer; outline: none; backface-visibility: hidden; vertical-align: middle; -webkit-transition: all .5s ease; transition: all .5s ease; white-space: normal; -webkit-box-shadow: 0px 3px 5px 0px rgba(255,165,0,0.03); box-shadow: 0px 3px 5px 0px rgba(255,165,0,0.03); text-decoration: none; text-align: left; font-size: 1em; line-height: 22px; font-weight: 700; }
 .dtr-btn a { display: block; text-decoration: none; color: inherit; }
 .dtr-btn span { width: 40px; height: 40px; display: inline-block; position: absolute; right: 5px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); border-radius: 50%; font-size: inherit; text-align: center; }
 .dtr-btn span i { display: inline-block; font-size: 16px; line-height: 40px; }
 .dtr-btn:hover span i { -webkit-animation: toRightFromLeft 0.3s forwards; -moz-animation: toRightFromLeft 0.3s forwards; animation: toRightFromLeft 0.3s forwards; }
+.dtr-btn.mt-5.text-center.inv { margin-top: 10px; margin-bottom: 10px; margin-left: 60px; margin-right: 0; display: block; width: fit-content; }
+/* .dtr-btn.mt-5.text-center { margin-top: 10px; margin-bottom: 10px; margin-left: 40px; margin-right: 0; display: block; width: fit-content; padding: 15px 55px; } */
 
 /*----------------------------------------*/
 /*===== 4 Lists =====*/
@@ -207,8 +209,11 @@ ol li, ul li { margin-bottom: 10px; }
 .dtr-icon-with-bg { position: relative; display: inline-block; margin-top: 20px; margin-right: 5px; font-size: 56px; z-index: 9; }
 .dtr-icon-with-bg:after { content: ''; width: 74px; height: 74px; position: absolute; top: -20px; left: 50%; margin-left: -37px; border-radius: 50%; z-index: -1; }
 /*== feature box ==*/
-.dtr-feature-box { position: relative; padding: 30px 30px 30px 80px; margin-bottom: 30px; border-radius: 10px; -webkit-box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); background-color: #ffffff;}
-.dtr-feature-box-icon { width: 50px; height: 50px; display: block; position: absolute; top: 50px; left: 0; border-radius: 0 10px 10px 0; font-size: 24px; line-height: 50px; text-align: center; }
+/* .dtr-feature-box { position: relative; padding: 30px 30px 30px 80px; margin-bottom: 30px; border-radius: 10px; -webkit-box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); background-color: #ffffff;} */
+.dtr-feature-box { margin: 20px auto; max-width: 800px; width: 100%; background-color: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); }
+.dtr-feature-box2 { position: relative; padding: 30px 30px 30px 80px; margin-bottom: 30px; border-radius: 10px; -webkit-box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 20px 0px rgba(255,165,0,0.1); background-color: #ffffff;}
+.dtr-feature-box-icon2 { width: 50px; height: 50px; display: block; position: absolute; top: 50px; left: 0; border-radius: 0 10px 10px 0; font-size: 24px; line-height: 50px; text-align: center; }
+.dtr-feature-box-icon { width: 50px; height: 50px; display: block; position: absolute; top: 25px; left: 20px; border-radius: 0 10px 10px 0; font-size: 24px; line-height: 50px; text-align: center; }
 /*== about ==*/
 .dtr-about img:first-child { margin: 0 20px 0 0; }
 .dtr-about img:last-child { margin: 0 0 0 20px; }
@@ -227,7 +232,7 @@ ol li, ul li { margin-bottom: 10px; }
 .dtr-meta-date:before { font-family: 'icomoon'; content: "\ecdb"; margin-right: 10px; vertical-align: middle; }
 .dtr-post-carousel-content { border-radius: 10px; }
 /*== reviews ==*/
-.dtr-testimonial-wrapper { padding: 1px 1px; margin-bottom: 5px; margin: 5px; border-radius: 5px; -webkit-box-shadow: 0px 3px 8px 0px rgba(255,165,0,0.1); box-shadow: 0px 3px 8px 0px rgba(255,165,0,0.1);  width: 100%; object-fit: cover;}
+.dtr-testimonial-wrapper { padding: 1px 1px; margin-bottom: 120px; margin: 5px; border-radius: 5px; -webkit-box-shadow: 0px 3px 8px 0px rgba(255,165,0,0.1); box-shadow: 0px 3px 8px 0px rgba(255,165,0,0.1);  width: 100%; object-fit: cover;}
 .dtr-5-stars { display: block; align-self: flex-start; }
 .dtr-5-stars:after { font-family: 'icomoon'; content: '\ec0e\ec0e\ec0e\ec0e\ec0e'; letter-spacing: 2px; font-size: 12px; }
 .dtr-testimonial-wrapper img { padding: 1px; -webkit-box-shadow: 0px 0px 10px 0px rgba(255,165,0,0.1); box-shadow: 0px 0px 10px 0px rgba(255,165,0,0.1); width: auto; object-fit: cover; max-width: 100%;}
@@ -697,3 +702,26 @@ opacity:0
 p {
     font-weight: bold; /* Isso deixa o texto abaixo do título em negrito */
   }
+
+  .dtr-feature-box-icon {
+    margin-right: 15px; /* Espaço entre o ícone e o texto */
+}
+
+.row.text-center {
+    justify-content: center; /* Centraliza os boxes na linha */
+    display: flex; /* Usa flexbox para alinhamento */
+    flex-wrap: wrap; /* Permite quebra de linha para boxes */
+}
+
+.col-12.col-md-6 {
+    flex: 0 0 100%; /* Faz o box ocupar 100% da largura no desktop */
+    max-width: 100%; /* Mantém a largura máxima em 100% */
+}
+
+/* Ajusta para telas menores */
+@media (min-width: 768px) {
+    .col-12.col-md-6 {
+        flex: 0 0 45%; /* Nos tablets e maiores, os boxes ocupam 45% da tela */
+        max-width: 45%;
+    }
+}

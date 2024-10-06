@@ -132,27 +132,26 @@
                         
                         <!-- form body starts -->
                         <form id="customForm">
-                            <input type="text" name="name" placeholder="Nome" required><br>
-                            <input type="email" name="email" placeholder="Email" required><br>
-                            <select name="insurance_type" required>
+                            <input type="text" name="name" placeholder="Nome" ><br>
+                            <input type="email" name="email" placeholder="Email" ><br>
+                            <select name="insurance_type" >
                                 <option value="">Selecione o Tipo de Produto</option>
-                                                <option value="Seguro de Vida">Seguro de Vida</option>
-                                                <option value="Seguro de Automóveis e Frotas">Seguro de Automóveis e Frotas</option>
-                                                <option value="Seguro Residencial e Empresarial">Seguro Residencial e Empresarial</option>
-                                                <option value="Seguro para Condomínios">Seguro para Condomínios</option>
-                                                <option value="Seguro de Responsabilidade Civil">Seguro de Responsabilidade Civil</option>
-                                                <option value="Seguro para Pets">Seguro para Pets</option>
-                                                <option value="Seguro Viagem">Seguro Viagem</option>
-                                                <option value="Seguro para Armas">Seguro para Armas</option>
-                                                <option value="Seguro Fiança">Seguro Fiança</option>
-                                                <option value="Planos de Saúde">Planos de Saúde</option>
-                                                <option value="Planos Odontológicos">Planos Odontológicos</option>
-                                                <option value="Consórcios">Consórcios</option>
-                                                <option value="Assessoria de Investimentos">Assessoria de Investimentos</option>
+                                <option value="Seguro de Vida">Seguro de Vida</option>
+                                <option value="Seguro de Automóveis e Frotas">Seguro de Automóveis e Frotas</option>
+                                <option value="Seguro Residencial e Empresarial">Seguro Residencial e Empresarial</option>
+                                <option value="Seguro para Condomínios">Seguro para Condomínios</option>
+                                <option value="Seguro de Responsabilidade Civil">Seguro de Responsabilidade Civil</option>
+                                <option value="Seguro para Pets">Seguro para Pets</option>
+                                <option value="Seguro Viagem">Seguro Viagem</option>
+                                <option value="Seguro para Armas">Seguro para Armas</option>
+                                <option value="Seguro Fiança">Seguro Fiança</option>
+                                <option value="Planos de Saúde">Planos de Saúde</option>
+                                <option value="Planos Odontológicos">Planos Odontológicos</option>
+                                <option value="Consórcios">Consórcios</option>
+                                <option value="Assessoria de Investimentos">Assessoria de Investimentos</option>
                             </select><br>
-                            <textarea name="message" placeholder="Mensagem"></textarea><br>
-                            <button type="submit" class="dtr-btn ml-4 d-none d-lg-block text-nowrap">Obter cotação <span><i class="icon-arrow-right" aria-hidden="true"></i></span>
-                            </button>
+                            <textarea name="message" placeholder="Mensagem" ></textarea><br>
+                            <button type="submit" class="dtr-btn ml-4 d-none d-lg-block text-nowrap">Obter cotação <span><i class="icon-arrow-right" aria-hidden="true"></i></span></button>
                         </form>
                         
                         <!-- <div class="dtr-form-body">
@@ -1491,7 +1490,6 @@
 </script>
 
 <script>
-    // Função para redirecionar para o WhatsForms após o envio
     document.getElementById('customForm').addEventListener('submit', function(e) {
         e.preventDefault(); // Impede o envio padrão do formulário
 
@@ -1501,9 +1499,11 @@
         var insuranceType = document.querySelector('select[name="insurance_type"]').value;
         var message = document.querySelector('textarea[name="message"]').value;
 
-        // Redireciona para o link do WhatsForms com os parâmetros preenchidos
-        var whatsFormUrl = `https://whatsform.com/tJYX2d?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&insuranceType=${encodeURIComponent(insuranceType)}&message=${encodeURIComponent(message)}`;
-        window.location.href = whatsFormUrl; // Redireciona o usuário
+        // Monta a URL do WhatsForm com os parâmetros
+        var whatsFormUrl = `https://whatsform.com/tJYX2d?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&insurance_type=${encodeURIComponent(insuranceType)}&message=${encodeURIComponent(message)}`;
+
+        // Abre a URL do formulário em uma nova aba
+        window.open(whatsFormUrl, '_blank'); // Força a abertura em uma nova aba
     });
 </script>
     

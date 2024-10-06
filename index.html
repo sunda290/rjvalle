@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
+<!-- <script async src="https://whatsform.com/launcher.js" id="wf-widget" data-id="tjyx2d" data-message="Cotação no WhatsApp" ></script> -->
 </head>
 <body>
 <div id="dtr-wrapper" class="clearfix"> 
@@ -118,66 +119,90 @@
                 </div>
                 <!-- column 1 ends --> 
                 
-<!-- column 2 starts -->
-<div class="col-12 col-md-4 wow fadeInRight" data-wow-delay="0.4s">
-    <div class="dtr-hero-form">
-        
-        <!-- form header starts -->
-        <div class="dtr-form-head">
-            <h4 class="text-center">Faça sua cotação</h4>
-        </div>
-
-        <iframe src="https://whatsform.com/tJYX2d"  width="100%" height="600" frameBorder="0"></iframe>
-        
-        <!-- form body starts -->
-        <!-- <div class="dtr-form-body">
-            <p class="text-center dtr-mb-4 text-size-sm">
-            <div class="dtr-form dtr-submit-full">
-                <form id="contactform" method="POST" action="https://formspree.io/f/xovaoalv">
-                    <fieldset>
-                        <p>
-                            <input name="name" type="text" placeholder="Nome" required>
-                        </p>
-                        <p>
-                            <input name="number" class="number" type="text" placeholder="Telefone" required>
-                        </p>
-                        <p>
-                            <input name="email" class="required email" type="email" placeholder="Email" required>
-                        </p>
-                        <p class="antispam">Deixe isto em branco: <br />
-                            <input name="url" />
-                        </p>
-                        <p>
-                            <select name="insurance_type" class="dtr-select" required>
-                                <option value="">Selecione o Tipo de Produto</option>
-                                <option value="Seguro de Vida">Seguro de Vida</option>
-                                <option value="Seguro de Automóveis e Frotas">Seguro de Automóveis e Frotas</option>
-                                <option value="Seguro Residencial e Empresarial">Seguro Residencial e Empresarial</option>
-                                <option value="Seguro para Condomínios">Seguro para Condomínios</option>
-                                <option value="Seguro de Responsabilidade Civil">Seguro de Responsabilidade Civil</option>
-                                <option value="Seguro para Pets">Seguro para Pets</option>
-                                <option value="Seguro Viagem">Seguro Viagem</option>
-                                <option value="Seguro para Armas">Seguro para Armas</option>
-                                <option value="Seguro Fiança">Seguro Fiança</option>
-                                <option value="Planos de Saúde">Planos de Saúde</option>
-                                <option value="Planos Odontológicos">Planos Odontológicos</option>
-                                <option value="Consórcios">Consórcios</option>
-                                <option value="Assessoria de Investimentos">Assessoria de Investimentos</option>
-                            </select>
-                        </p>
-                        <button type="submit" class="dtr-btn ml-4 d-none d-lg-block text-nowrap">Obter cotação <span><i class="icon-arrow-right" aria-hidden="true"></i></span>
-                        </button>
+                <!-- column 2 starts -->
+                <div class="col-12 col-md-4 wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="dtr-hero-form">
                         
-                        <div id="result"></div>
-                    </fieldset>
-                </form>
-            </div>
-        </div> -->
-        <!-- form body ends --> 
-        
-    </div>
-</div>
-<!-- column 2 ends  -->
+                        <!-- form header starts -->
+                        <div class="dtr-form-head">
+                            <h4 class="text-center">Faça sua cotação</h4>
+                        </div>
+
+                        <!-- <iframe src="https://whatsform.com/tJYX2d"  width="100%" height="600" frameBorder="0"></iframe> -->
+                        
+                        <!-- form body starts -->
+                        <form id="customForm">
+                            <input type="text" name="name" placeholder="Nome" required><br>
+                            <input type="email" name="email" placeholder="Email" required><br>
+                            <select name="insurance_type" required>
+                                <option value="">Selecione o Tipo de Produto</option>
+                                                <option value="Seguro de Vida">Seguro de Vida</option>
+                                                <option value="Seguro de Automóveis e Frotas">Seguro de Automóveis e Frotas</option>
+                                                <option value="Seguro Residencial e Empresarial">Seguro Residencial e Empresarial</option>
+                                                <option value="Seguro para Condomínios">Seguro para Condomínios</option>
+                                                <option value="Seguro de Responsabilidade Civil">Seguro de Responsabilidade Civil</option>
+                                                <option value="Seguro para Pets">Seguro para Pets</option>
+                                                <option value="Seguro Viagem">Seguro Viagem</option>
+                                                <option value="Seguro para Armas">Seguro para Armas</option>
+                                                <option value="Seguro Fiança">Seguro Fiança</option>
+                                                <option value="Planos de Saúde">Planos de Saúde</option>
+                                                <option value="Planos Odontológicos">Planos Odontológicos</option>
+                                                <option value="Consórcios">Consórcios</option>
+                                                <option value="Assessoria de Investimentos">Assessoria de Investimentos</option>
+                            </select><br>
+                            <textarea name="message" placeholder="Mensagem"></textarea><br>
+                            <button type="submit" class="dtr-btn ml-4 d-none d-lg-block text-nowrap">Obter cotação <span><i class="icon-arrow-right" aria-hidden="true"></i></span>
+                            </button>
+                        </form>
+                        
+                        <!-- <div class="dtr-form-body">
+                            <p class="text-center dtr-mb-4 text-size-sm">
+                            <div class="dtr-form dtr-submit-full">
+                                <form id="contactform" method="POST" action="https://formspree.io/f/xovaoalv">
+                                    <fieldset>
+                                        <p>
+                                            <input name="name" type="text" placeholder="Nome" required>
+                                        </p>
+                                        <p>
+                                            <input name="number" class="number" type="text" placeholder="Telefone" required>
+                                        </p>
+                                        <p>
+                                            <input name="email" class="required email" type="email" placeholder="Email" required>
+                                        </p>
+                                        <p class="antispam">Deixe isto em branco: <br />
+                                            <input name="url" />
+                                        </p>
+                                        <p>
+                                            <select name="insurance_type" class="dtr-select" required>
+                                                <option value="">Selecione o Tipo de Produto</option>
+                                                <option value="Seguro de Vida">Seguro de Vida</option>
+                                                <option value="Seguro de Automóveis e Frotas">Seguro de Automóveis e Frotas</option>
+                                                <option value="Seguro Residencial e Empresarial">Seguro Residencial e Empresarial</option>
+                                                <option value="Seguro para Condomínios">Seguro para Condomínios</option>
+                                                <option value="Seguro de Responsabilidade Civil">Seguro de Responsabilidade Civil</option>
+                                                <option value="Seguro para Pets">Seguro para Pets</option>
+                                                <option value="Seguro Viagem">Seguro Viagem</option>
+                                                <option value="Seguro para Armas">Seguro para Armas</option>
+                                                <option value="Seguro Fiança">Seguro Fiança</option>
+                                                <option value="Planos de Saúde">Planos de Saúde</option>
+                                                <option value="Planos Odontológicos">Planos Odontológicos</option>
+                                                <option value="Consórcios">Consórcios</option>
+                                                <option value="Assessoria de Investimentos">Assessoria de Investimentos</option>
+                                            </select>
+                                        </p>
+                                        <button type="submit" class="dtr-btn ml-4 d-none d-lg-block text-nowrap">Obter cotação <span><i class="icon-arrow-right" aria-hidden="true"></i></span>
+                                        </button>
+                                        
+                                        <div id="result"></div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div> -->
+                        <!-- form body ends --> 
+                        
+                    </div>
+                </div>
+                <!-- column 2 ends  -->
 
 
             </div>
@@ -1051,7 +1076,7 @@
 
                 <!-- column 1 starts -->
                 <div class="col-12 col-lg-3 wow fadeInUp" data-wow-delay="0.4s">
-                    <h2>Cuidando <span class="color-blue">de você</span> em todos os aspectos!</h2>
+                    <h2>Cuidando de você em todos os aspectos!</h2>
                 </div>
                 <!-- column 1 ends -->
 
@@ -1065,8 +1090,9 @@
                 <!-- column 3 starts -->
                 <div class="col-12 col-lg-3 text-lg-right text-center wow fadeInUp" data-wow-delay="0.4s">
                     <div class="dtr-btn">
-                        <a href="#contactform">Fale Conosco<span><i class="icon-whatsapp" aria-hidden="true"></i></span></a>
+                        <a href="https://wa.me/552122255002?text=Olá,%20vim%20pelo%20site%20e%20quero%20saber%20mais%20sobre%20seus%20produtos." target="_blank">Fale Conosco<span><i class="icon-whatsapp" aria-hidden="true"></i></span></a>
                     </div>
+
                 </div>
                 <!-- column 3 ends -->
 
@@ -1346,6 +1372,7 @@
             <div class="col-12 col-sm-6 col-lg-6 dtr-sm-mb-30px">
                 <p><img src="assets/images/logo_rj.png" alt="Logo RJ Valle" class="wow pulse" data-wow-delay="0.4s" style="width: 50%;"></p>
                 <p class="dtr-rounded-alert wow fadeInUp" data-wow-delay="0.6s">Assessoria especializada em Seguros em geral, Planos de saúde e odontológicos, Consórcios e investimentos.</p>
+                <h2>Cuidando de você em todos os aspectos!</h2>
             </div>
             <!-- column 1 ends --> 
             
@@ -1462,7 +1489,23 @@
 });
 
 </script>
-    
+
+<script>
+    // Função para redirecionar para o WhatsForms após o envio
+    document.getElementById('customForm').addEventListener('submit', function(e) {
+        e.preventDefault(); // Impede o envio padrão do formulário
+
+        // Captura os dados do formulário
+        var name = document.querySelector('input[name="name"]').value;
+        var email = document.querySelector('input[name="email"]').value;
+        var insuranceType = document.querySelector('select[name="insurance_type"]').value;
+        var message = document.querySelector('textarea[name="message"]').value;
+
+        // Redireciona para o link do WhatsForms com os parâmetros preenchidos
+        var whatsFormUrl = `https://whatsform.com/tJYX2d?name=${encodeURIComponent(name)}&email=${encodeURIComponent(email)}&insuranceType=${encodeURIComponent(insuranceType)}&message=${encodeURIComponent(message)}`;
+        window.location.href = whatsFormUrl; // Redireciona o usuário
+    });
+</script>
     
 </body>
 </html>

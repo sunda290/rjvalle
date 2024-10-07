@@ -726,6 +726,12 @@ p {
     }
 }
 
+@media (max-width: 768px) {
+    #dtr-header-global .dtr-btn {
+        display: none;
+    }
+}
+
 @media (min-width: 768px) {
     .col-12.col-md-6 {
         flex: 0 0 45%; /* Nos tablets e maiores, os boxes ocupam 45% da tela */
@@ -760,4 +766,20 @@ p {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
     max-width: 600px; /* Largura máxima */
     margin: 0 auto; /* Centralizar a caixa */
+}
+
+/* Faz o botão aparecer de forma mais visível em telas médias (entre 768px e 992px) */
+@media (max-width: 992px) {
+    #dtr-header-global .dtr-btn {
+        display: block !important;
+        margin: 20px auto;
+        width: 90%; /* Faz o botão ocupar uma boa parte da tela em dispositivos menores */
+        text-align: center;
+        padding: 10px 20px; /* Ajusta o espaçamento interno para dispositivos móveis */
+    }
+
+    /* Ajusta o ícone dentro do botão */
+    #dtr-header-global .dtr-btn span {
+        display: inline-block;
+    }
 }

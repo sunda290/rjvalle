@@ -190,7 +190,7 @@ ol li, ul li { margin-bottom: 10px; }
 .dtr-bordered-blockquote { padding: 5px 0 5px 20px; border-left: 2px solid #e5e5e5; font-size: 18px; line-height: 32px; font-style: italic; }
 .dtr-bordered-blockquote .dtr-quote-source { display: inline-block; margin-top: 10px; font-size: 14px; font-weight: 500; font-style: normal; }
 /*== Rounded alert ==*/
-.dtr-rounded-alert { display: inline-block; padding: 10px 30px; border-radius: 150px; }
+.dtr-rounded-alert { display: inline-block; padding: 20px 60px; border-radius: 150px; }
 /*== Video button ==*/
 .dtr-video-wrapper-inner { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
 .dtr-video-button { width: 80px; height: 80px; display: block; position: relative; margin: 0 auto; -webkit-border-radius: 100%; border-radius: 100%; text-align: center; z-index: 9; }

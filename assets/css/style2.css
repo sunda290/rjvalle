@@ -805,4 +805,12 @@ h1 {
         font-size: 1.5rem; /* Ajuste o tamanho para telas ainda menores */
     }
 }
-
+/* Estilo para dispositivos móveis */
+@media (max-width: 768px) {
+    .dtr-feature-box h5 {
+        display: block;
+        white-space: normal; /* Permite a quebra de linha */
+        word-wrap: break-word; /* Garante que o texto será quebrado corretamente */
+        font-size: 1.2rem; /* Ajusta o tamanho da fonte, opcional */
+    }
+}

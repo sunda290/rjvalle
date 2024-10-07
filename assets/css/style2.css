@@ -800,3 +800,12 @@ h1 {
     }
 }
 
+/* Ajuste de tamanho das imagens para dispositivos móveis */
+@media (max-width: 768px) {
+    /* Selecionando as imagens de ícones nas seções específicas */
+    #consorcios img, 
+    #investments img {
+        width: 80%; /* Reduzindo o tamanho para 80% do original */
+        height: auto; /* Mantendo a proporção da imagem */
+    }
+}

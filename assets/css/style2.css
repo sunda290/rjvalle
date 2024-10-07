@@ -792,6 +792,12 @@ h1 {
     h1 {
         font-size: 2rem; /* Ajuste o tamanho que você deseja para dispositivos móveis */
     }
+    #consorcios img, 
+    #investments img,
+    .dtr-feature-box-icon img {
+        width: 30%; /* Reduzindo o tamanho para 80% do original */
+        height: auto; /* Mantendo a proporção da imagem */
+    }
 }
 
 @media (max-width: 576px) {
@@ -800,13 +806,3 @@ h1 {
     }
 }
 
-/* Ajuste de tamanho das imagens para dispositivos móveis */
-@media (max-width: 768px) {
-    /* Selecionando as imagens de ícones nas seções específicas */
-    #consorcios img, 
-    #investments img,
-    .dtr-feature-box-icon img {
-        width: 30%; /* Reduzindo o tamanho para 80% do original */
-        height: auto; /* Mantendo a proporção da imagem */
-    }
-}

@@ -777,3 +777,7 @@ p {
 #dtr-header-global .dtr-btn span {
     display: inline-block;
 }
+
+html, body {
+    overflow-x: hidden;
+}

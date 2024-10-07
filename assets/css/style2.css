@@ -724,9 +724,7 @@ p {
     .dtr-sticky-tabs-section img {
         display: none;
     }
-}
 
-@media (max-width: 768px) {
     #dtr-header-global .dtr-btn {
         display: none;
     }
@@ -754,10 +752,16 @@ p {
         padding: 10px 20px; /* Ajusta o espaçamento interno para telas menores */
     }
 
+    /* Esconde o botão quando dentro da div específica */
+    .container.container.d-flex.justify-content-between .dtr-btn.ml-4.d-none.d-lg-block {
+        display: none !important; /* Esconde o botão dentro da div específica em telas menores */
+    }
+}
+
     .dtr-btn span {
         display: inline-block;
     }
-}
+
 
 .form-box {
     background-color: #ffffff; /* Fundo branco */
@@ -768,18 +772,8 @@ p {
     margin: 0 auto; /* Centralizar a caixa */
 }
 
-/* Faz o botão aparecer de forma mais visível em telas médias (entre 768px e 992px) */
-@media (max-width: 992px) {
-    #dtr-header-global .dtr-btn {
-        display: block !important;
-        margin: 20px auto;
-        width: 90%; /* Faz o botão ocupar uma boa parte da tela em dispositivos menores */
-        text-align: center;
-        padding: 10px 20px; /* Ajusta o espaçamento interno para dispositivos móveis */
-    }
 
-    /* Ajusta o ícone dentro do botão */
-    #dtr-header-global .dtr-btn span {
-        display: inline-block;
-    }
+/* Ajusta o ícone dentro do botão */
+#dtr-header-global .dtr-btn span {
+    display: inline-block;
 }

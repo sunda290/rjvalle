@@ -804,7 +804,8 @@ h1 {
 @media (max-width: 768px) {
     /* Selecionando as imagens de ícones nas seções específicas */
     #consorcios img, 
-    #investments img {
+    #investments img,
+ .dtr-feature-box-icon img {
         width: 80%; /* Reduzindo o tamanho para 80% do original */
         height: auto; /* Mantendo a proporção da imagem */
     }

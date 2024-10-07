@@ -724,6 +724,26 @@ p {
         flex: 0 0 45%; /* Nos tablets e maiores, os boxes ocupam 45% da tela */
         max-width: 45%;
     }
+    .hero-section h1 {
+        font-size: 2rem; /* Ajusta o tamanho da fonte para telas menores */
+    }
+    .hero-section p {
+        font-size: 1.2rem; /* Ajusta o texto para não estourar na tela */
+    }
+}
+
+@media (max-width: 992px) {
+    .dtr-btn.ml-4.d-none.d-lg-block {
+        display: block !important; /* Faz o botão aparecer em telas menores */
+        margin: 20px auto; /* Centraliza o botão na tela */
+        width: 90%; /* Ajusta o botão para ocupar uma boa parte da tela em dispositivos móveis */
+        text-align: center; /* Centraliza o texto dentro do botão */
+        padding: 10px 20px; /* Ajusta o espaçamento interno para telas menores */
+    }
+
+    .dtr-btn span {
+        display: inline-block;
+    }
 }
 
 .form-box {

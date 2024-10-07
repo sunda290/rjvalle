@@ -736,7 +736,7 @@ p {
         max-width: 45%;
     }
     .hero-section h1 {
-        font-size: 2rem; /* Ajusta o tamanho da fonte para telas menores */
+        font-size: 3rem; /* Ajusta o tamanho da fonte para telas menores */
     }
     .hero-section p {
         font-size: 1.2rem; /* Ajusta o texto para não estourar na tela */

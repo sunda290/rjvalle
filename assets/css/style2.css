@@ -681,11 +681,11 @@ opacity:0
 }
 
 .custom-owl-nav .owl-prev {
-    left: -70px;
+    left: -30px;
 }
 
 .custom-owl-nav .owl-next {
-    right: -20px;
+    right: 20px;
 }
 
 .container {

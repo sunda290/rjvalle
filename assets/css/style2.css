@@ -806,7 +806,7 @@ h1 {
     #consorcios img, 
     #investments img,
  .dtr-feature-box-icon img {
-        width: 80%; /* Reduzindo o tamanho para 80% do original */
+        width: 50%; /* Reduzindo o tamanho para 80% do original */
         height: auto; /* Mantendo a proporção da imagem */
     }
 }
